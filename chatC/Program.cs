@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NETForm
+namespace chatC
 {
     static class Program
     {
@@ -16,12 +16,7 @@ namespace NETForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new DNSQuary());
-            //Application.Run(new UIPAddress());
-            //Application.Run(new webClient());
-            //Application.Run(new webRequest());
-            Application.Run(new UwebBrower());
-
+            Application.Run(new Form1());
         }
     }
 }

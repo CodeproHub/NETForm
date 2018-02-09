@@ -4,28 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2B789273-0474-4AA0-A15E-BEC8C8FA498C}</ProjectGuid>
+    <ProjectGuid>{E7E70638-2952-494F-AC74-9ECC2CBFE1A6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>NETForm</RootNamespace>
-    <AssemblyName>NETForm</AssemblyName>
+    <RootNamespace>chatS</RootNamespace>
+    <AssemblyName>chatS</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <PublishUrl>publish\</PublishUrl>
-    <Install>true</Install>
-    <InstallFrom>Disk</InstallFrom>
-    <UpdateEnabled>false</UpdateEnabled>
-    <UpdateMode>Foreground</UpdateMode>
-    <UpdateInterval>7</UpdateInterval>
-    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
-    <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
-    <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
-    <UseApplicationTrust>false</UseApplicationTrust>
-    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -60,43 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DNSQuary.cs">
+    <Compile Include="chatServer.cs" />
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DNSQuary.Designer.cs">
-      <DependentUpon>DNSQuary.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UIPAddress.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UIPAddress.Designer.cs">
-      <DependentUpon>UIPAddress.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UwebBrower.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UwebBrower.Designer.cs">
-      <DependentUpon>UwebBrower.cs</DependentUpon>
-    </Compile>
-    <Compile Include="webClient.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="webClient.Designer.cs">
-      <DependentUpon>webClient.cs</DependentUpon>
-    </Compile>
-    <Compile Include="webRequest.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="webRequest.Designer.cs">
-      <DependentUpon>webRequest.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="DNSQuary.resx">
-      <DependentUpon>DNSQuary.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UIPAddress.resx">
-      <DependentUpon>UIPAddress.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -107,15 +66,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UwebBrower.resx">
-      <DependentUpon>UwebBrower.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="webClient.resx">
-      <DependentUpon>webClient.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="webRequest.resx">
-      <DependentUpon>webRequest.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -128,18 +78,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
-      <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 和 x64%29</ProductName>
-      <Install>true</Install>
-    </BootstrapperPackage>
-    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
-      <Visible>False</Visible>
-      <ProductName>.NET Framework 3.5 SP1</ProductName>
-      <Install>false</Install>
-    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
